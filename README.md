@@ -8,8 +8,9 @@ AJAX vasitəsilə sorğular göndərilir və nəticələr ekrana basılır.
 ## Quraşdırma
 
 1. **Tələb olunan PHP versiyası:** `>=8.0`  
-2. **Composer** quraşdırılmalıdır və layihədə `composer install` çalışdırılmalıdır.  
-3. `.env` faylında **DB bağlantısı** parametrlərini dəyişin:
+2. **Composer** quraşdırılmalıdır və layihədə `composer install` çalışdırılmalıdır. 
+3. **cp .env.example .env** 
+4. `.env` faylında **DB bağlantısı** parametrlərini dəyişin:
 
 DB_HOST=localhost
 DB_PORT=3306
@@ -19,7 +20,7 @@ DB_PASS=yourpassword
 DB_CHARSET=utf8mb4
 
 
-4. Email göndərilməsi üçün **SMTP parametrlərini** `.env` faylında verin:
+5. Email göndərilməsi üçün **SMTP parametrlərini** `.env` faylında verin:
 
 SMTP_HOST=smtp-host
 SMTP_PORT=587
@@ -29,7 +30,7 @@ SMTP_FROM=youremail@gmail.com
 SMTP_FROM_NAME=Mini App
 
 
-5. Admin panel girişi üçün **email və şifrəni** `.env` faylında əlavə edin:(bu bilgiler normalda table'den ve pass hash'lenmiş şekilde tutulmalıdı. )
+6. Admin panel girişi üçün **email və şifrəni** `.env` faylında əlavə edin:(bu bilgiler normalda table'den ve pass hash'lenmiş şekilde tutulmalıdı. )
 
 ADMIN_EMAIL=admin@example.com
 ADMIN_PASS=123456
